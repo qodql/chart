@@ -1,0 +1,284 @@
+@font-face{
+    font-family: 'GmarketSans';
+    src: url('../../public/font/GmarketSansTTFMedium.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GmarketSans';
+}
+
+body{
+    background-color: #7F7F7F;
+}
+
+img{
+    vertical-align: middle;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.box-shadow{
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.sub-title{
+    color: #111;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main{
+    width: 767px;
+    height: 1700px;
+    background-color: #FAFAFA;
+    padding: 32px;
+    .main-date{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 80px;
+        gap: 8px;
+        i{
+            background-size: 6px;
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+            &.arrow-left{
+                background: url('../../public/img/icon/arrow-left.svg') no-repeat center;
+            }
+            &.arrow-right{
+                background: url('../../public/img/icon/arrow-right.svg') no-repeat center;
+            }
+        }
+        span{
+            color: #333;
+            font-size: 28px;
+        }
+    }
+    .main-property{
+        width: 100%;
+        height: 166px;
+        margin: 16px 0;
+        padding: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .property-status{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 16px;
+            h5{
+                font-weight: 500;
+                font-size: 32px;
+                color: #111;
+            }
+            p{
+                font-weight: 700;
+                font-size: 36px;
+                color: #6042F8;
+            }
+        }
+        .payment-status{
+            .payment-box{
+                display: flex;
+                justify-content: space-between;
+                gap: 32px;
+                span{
+                    font-size: 20px;
+                    color: #111;
+                }
+            }
+            .benefit{
+                padding-bottom: 12px;
+                span:nth-child(2){
+                    font-weight: 500;
+                    color: #F34141;
+                }
+            }
+            .payment{
+                span:nth-child(2){
+                    font-weight: 500;
+                    color: #0068FF;
+                }
+            }
+        }
+    }
+    .main-details{
+        width: 100%;
+        margin: 40px 0;
+        .details-tit{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            span{
+                font-size: 20px;
+                color: #666;
+                cursor: pointer;
+            }
+        }
+        .detail-box{
+            width: 100%;
+            height: 197px;
+            margin: 16px 0;
+            padding: 40px 32px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                li{
+                    display: flex;
+                    gap: 40px;
+                    position: relative;
+                    span{
+                        font-size: 20px;
+                    }
+                    .detail-date{
+                        color: #666;
+                    }
+                    .detail-trade{
+                        color: #333;
+                    }
+                    .detail-price{
+                        color: #111;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .main-chart{
+        width: 100%;
+        margin: 40px 0;
+        .chart-box{
+            width: 100%;
+            margin: 16px 0;
+            padding: 60px;
+        }
+        .chart-list{
+            width: 100%;
+            ul{
+                li{
+                    padding: 20px 0;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #eee;
+                    gap: 28px;
+                    position: relative;
+                    span{
+                        width: 77px;
+                        height: 28px;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 8px;
+                        background-color: #281A6F;
+                        font-size: 16px;
+                        padding: 5px 20px;
+                    }
+                    p{
+                        font-size: 20px;
+                        color: #333;
+                    }
+                    p:last-child{
+                        position: absolute;
+                        right: 0;
+                    }
+                    .chart-second{
+                        background-color: #ED46DC;
+                    }
+                    .chart-third{
+                        background-color: #6042F8;
+                    }
+                    .chart-fourth{
+                        background-color: #57F367;
+                    }
+                }
+            }
+            button{
+                width: 100%;
+                height: 70px;
+                line-height: 78px;
+                background-color: #6042F8;
+                border: none;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 24px;
+                color: #fff;
+                cursor: pointer;
+                margin: 24px 0;
+            }
+        }
+    }
+}
+//insert
+.insert-wrap{
+    width: 767px;
+    height: 900px;
+    background-color: #FAFAFA;
+    padding: 32px;
+    .insert-radio{
+        input{
+            border: 1px solid #333;
+            background-color: transparent;
+            padding: 10px 20px;
+            cursor: pointer;
+            &:first-child{
+                margin-right: 10px;
+            }
+        }
+    }
+    .insert-input-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+        label{
+            font-size: 24px;
+            color: #333;
+        }
+        input{
+            height: 50px;
+            border-radius: 8px;
+            border: 1px solid #666;
+        }
+    }
+    .insert-msg{
+        textarea{
+            height: 200px;
+            border-radius: 8px;
+        }
+    }
+    .insert-btn{
+        flex-direction: row;
+        gap: 16px;
+        input{
+            border: none;
+            font-size: 20px;
+            color: #fff;
+            line-height: 52px;
+            cursor: pointer;
+        }
+        .add-btn{
+            width: 100%;
+            background-color: #6042F8;
+        }
+        .cancel-btn{
+            width: 100%;
+            background-color: #c4c4c4;
+        }
+    }
+    
+}
+
+
+
+
+
